@@ -73,7 +73,7 @@ OOM 降分辨率重试、最多三次、超时复用原 prompt_id、未知提交
 
 最终本机运行：82 项 pytest 全部通过，0 失败、0 跳过。覆盖结构化数据、核心设定、时长和 ID 引用、风格门槛、图结构/端口/模型选项、模板保护、注册与激活、修复和优化、故障模拟、文件完整性、素材包门槛、连续性、串行锁、CLI 参数及安装冲突。CLI 参数解析测试不等于每个命令都完成实机全流程。
 
-仓库包含 Windows/Ubuntu、Python 3.11/3.12 的 GitHub Actions 配置。此报告只记录本机 3.12 的结果；远程 CI 结果以 GitHub 实际运行页面为准。
+首次上传后，Windows/Ubuntu × Python 3.11/3.12 四组 GitHub Actions 均成功，运行总时长 44 秒。[远程运行记录](https://github.com/shaungjiang/ai-drama-skills/actions/runs/37926909716)。这些远程检查为离线测试，不连接用户本机 ComfyUI。
 
 ## 11. 未完成事项与原因
 
