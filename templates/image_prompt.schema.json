@@ -1,0 +1,56 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "prompt_id": {
+      "title": "Prompt Id",
+      "type": "string"
+    },
+    "shot_id": {
+      "title": "Shot Id",
+      "type": "string"
+    },
+    "frame": {
+      "default": "first",
+      "enum": [
+        "first",
+        "last"
+      ],
+      "title": "Frame",
+      "type": "string"
+    },
+    "language": {
+      "default": "zh",
+      "enum": [
+        "zh",
+        "en"
+      ],
+      "title": "Language",
+      "type": "string"
+    },
+    "positive": {
+      "title": "Positive",
+      "type": "string"
+    },
+    "negative": {
+      "title": "Negative",
+      "type": "string"
+    },
+    "model_family": {
+      "title": "Model Family",
+      "type": "string"
+    },
+    "source_hash": {
+      "title": "Source Hash",
+      "type": "string"
+    }
+  },
+  "required": [
+    "shot_id",
+    "positive",
+    "negative",
+    "model_family",
+    "source_hash"
+  ],
+  "title": "ImagePrompt",
+  "type": "object"
+}

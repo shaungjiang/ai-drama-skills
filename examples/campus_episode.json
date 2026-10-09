@@ -1,0 +1,141 @@
+{
+  "episode_id": "EP01",
+  "title": "校园 · 独立影视写实测试",
+  "duration": 12.0,
+  "scenes": [
+    {
+      "scene_id": "SCENE001",
+      "location_id": "LOC001",
+      "time": "下午",
+      "weather": "晴天",
+      "lighting": "左窗柔和自然光，右侧墙面反光补光",
+      "characters": [
+        "CHAR001"
+      ],
+      "objective": "入学第一天的紧张转为释然"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "SHOT001",
+      "scene_id": "SCENE001",
+      "characters": [
+        "CHAR001"
+      ],
+      "duration": 6.0,
+      "size": "中景",
+      "angle": "平视",
+      "composition": "人物位于左侧三分线，右侧保留行动空间",
+      "eye_line": "画面右侧",
+      "axis_side": "A",
+      "camera_movement": "固定机位",
+      "action": "陈默放下帆布包，坐在靠窗第二排，抬眼看向教室门",
+      "expression": "轻微紧张",
+      "dialogue": "陈默：新的开始。",
+      "environment": "稳定",
+      "first_frame": "陈默坐于靠窗第二排，帆布包在右侧桌面",
+      "last_frame": "陈默抬眼看向画面右侧的门，包仍在桌上",
+      "frame_mode": "single",
+      "transition": "直接切换",
+      "previous_link": "建立空间",
+      "next_link": "视线匹配",
+      "continuity_in": {},
+      "continuity_out": {},
+      "state_versions": {
+        "CHAR001": 1
+      },
+      "prop_ids": [],
+      "source_excerpt": ""
+    },
+    {
+      "shot_id": "SHOT002",
+      "scene_id": "SCENE001",
+      "characters": [
+        "CHAR001"
+      ],
+      "duration": 6.0,
+      "size": "近景",
+      "angle": "平视",
+      "composition": "人物位于左侧三分线，右侧保留行动空间",
+      "eye_line": "画面右侧",
+      "axis_side": "A",
+      "camera_movement": "固定机位",
+      "action": "陈默肩膀放松，轻轻微笑",
+      "expression": "释然",
+      "dialogue": "",
+      "environment": "稳定",
+      "first_frame": "陈默看向门口，肩膀略紧绷",
+      "last_frame": "同一站位与服装，陈默自然微笑",
+      "frame_mode": "single",
+      "transition": "直接切换",
+      "previous_link": "视线匹配，摄影机保持轴线A",
+      "next_link": "",
+      "continuity_in": {},
+      "continuity_out": {},
+      "state_versions": {
+        "CHAR001": 1
+      },
+      "prop_ids": [],
+      "source_excerpt": ""
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR001",
+      "name": "陈默",
+      "gender": "男",
+      "age": "18岁大学新生",
+      "identity": "现代大学生（独立虚构演示）",
+      "appearance": "成年东亚青年，黑色短发，浅蓝衬衫",
+      "face_shape": "自然椭圆脸",
+      "facial_features": "平直眉，深棕眼睛，直鼻",
+      "hairstyle": "黑色短发，整齐侧分",
+      "hair_color": "黑色",
+      "skin_color": "自然米肤色，保留皮肤纹理",
+      "physique": "自然身形，正常比例",
+      "personality": "略紧张而友善",
+      "visual_anchors": [
+        "浅蓝棉衬衫",
+        "黑色帆布包",
+        "侧分短发"
+      ],
+      "states": [
+        {
+          "state_id": "STATE_CAMPUS_01",
+          "version": 1,
+          "clothing": "浅蓝棉衬衫，深灰长裤",
+          "accessories": [
+            "黑色帆布包"
+          ],
+          "weapons": [],
+          "health": "正常",
+          "reference_images": [],
+          "approved": false,
+          "approval_note": null
+        }
+      ],
+      "active_state": 1
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC001",
+      "name": "大学教室",
+      "layout": "左侧三扇窗，右侧教室门，前方黑板，四列木质课桌，人物位于靠窗第二排；摄影机在桌列右侧",
+      "architecture": "现代大学教室，自然透视，浅色墙面",
+      "visual_anchors": [
+        "三扇左窗",
+        "右侧入口",
+        "四列木桌"
+      ],
+      "reference_images": [],
+      "approved": false
+    }
+  ],
+  "props": [],
+  "relationships": [],
+  "synopsis": "大学新生在教室中迎来新的开始。",
+  "hook": "入学第一天",
+  "cliffhanger": "",
+  "authoring": "authored_demo"
+}

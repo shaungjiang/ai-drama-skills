@@ -1,0 +1,4 @@
+interface:
+  display_name: 影视分镜导演
+  short_description: 为漫剧编写含景别、机位、构图、视线、轴线、动作、台词和首尾状态的专业结构化分镜，维护时长和衔接。
+  default_prompt: 使用 $storyboard-director 在当前 AI Drama Studio 项目中完成对应制作任务。

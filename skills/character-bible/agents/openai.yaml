@@ -1,0 +1,4 @@
+interface:
+  display_name: 角色圣经管理
+  short_description: 建立并版本化漫剧角色的五官、发型、服装、饰品、武器和身份锚点；生成候选定妆图并管理用户审批。
+  default_prompt: 使用 $character-bible 在当前 AI Drama Studio 项目中完成对应制作任务。

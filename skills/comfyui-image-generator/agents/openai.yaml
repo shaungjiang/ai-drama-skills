@@ -1,0 +1,4 @@
+interface:
+  display_name: ComfyUI出图执行
+  short_description: 使用已验证且兼容的ComfyUI工作流提交图片、注入参数、查询队列、保存PNG和生成元数据，并恢复失败任务。
+  default_prompt: 使用 $comfyui-image-generator 在当前 AI Drama Studio 项目中完成对应制作任务。

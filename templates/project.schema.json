@@ -1,0 +1,104 @@
+{
+  "$defs": {
+    "VisualStyle": {
+      "additionalProperties": false,
+      "properties": {
+        "style_id": {
+          "enum": [
+            "cinematic_3d_donghua",
+            "cinematic_live_action"
+          ],
+          "title": "Style Id",
+          "type": "string"
+        },
+        "mode": {
+          "default": "AUTO",
+          "enum": [
+            "AUTO",
+            "MANUAL",
+            "LOCKED"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "confirmed": {
+          "default": false,
+          "title": "Confirmed",
+          "type": "boolean"
+        },
+        "rules": {
+          "additionalProperties": true,
+          "title": "Rules",
+          "type": "object"
+        },
+        "reason": {
+          "default": "",
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "style_id"
+      ],
+      "title": "VisualStyle",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "project_id": {
+      "title": "Project Id",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "source_path": {
+      "title": "Source Path",
+      "type": "string"
+    },
+    "source_hash": {
+      "title": "Source Hash",
+      "type": "string"
+    },
+    "duration": {
+      "default": 60,
+      "exclusiveMinimum": 0,
+      "title": "Duration",
+      "type": "number"
+    },
+    "aspect_ratio": {
+      "default": "9:16",
+      "enum": [
+        "9:16",
+        "16:9",
+        "1:1"
+      ],
+      "title": "Aspect Ratio",
+      "type": "string"
+    },
+    "style": {
+      "$ref": "#/$defs/VisualStyle"
+    },
+    "episodes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Episodes",
+      "type": "array"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "source_path",
+    "source_hash",
+    "style"
+  ],
+  "title": "Project",
+  "type": "object"
+}

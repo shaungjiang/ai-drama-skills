@@ -1,0 +1,169 @@
+{
+  "$defs": {
+    "WorkflowStatus": {
+      "enum": [
+        "CREATED",
+        "STATIC_VALIDATED",
+        "ENV_VALIDATED",
+        "RUNTIME_VERIFIED",
+        "ACTIVE",
+        "FAILED",
+        "DISABLED",
+        "OUTDATED"
+      ],
+      "title": "WorkflowStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "workflow_id": {
+      "title": "Workflow Id",
+      "type": "string"
+    },
+    "workflow_name": {
+      "title": "Workflow Name",
+      "type": "string"
+    },
+    "model_family": {
+      "title": "Model Family",
+      "type": "string"
+    },
+    "model_version": {
+      "title": "Model Version",
+      "type": "string"
+    },
+    "task_type": {
+      "title": "Task Type",
+      "type": "string"
+    },
+    "supported_styles": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Supported Styles",
+      "type": "array"
+    },
+    "supported_inputs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Supported Inputs",
+      "type": "array"
+    },
+    "required_nodes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Required Nodes",
+      "type": "array"
+    },
+    "workflow_path": {
+      "title": "Workflow Path",
+      "type": "string"
+    },
+    "api_workflow_path": {
+      "title": "Api Workflow Path",
+      "type": "string"
+    },
+    "metadata_path": {
+      "title": "Metadata Path",
+      "type": "string"
+    },
+    "validation_status": {
+      "$ref": "#/$defs/WorkflowStatus",
+      "default": "CREATED"
+    },
+    "runtime_verified": {
+      "default": false,
+      "title": "Runtime Verified",
+      "type": "boolean"
+    },
+    "version": {
+      "default": 1,
+      "minimum": 1,
+      "title": "Version",
+      "type": "integer"
+    },
+    "parent_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Parent Id"
+    },
+    "last_tested_at": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Last Tested At"
+    },
+    "environment_fingerprint": {
+      "title": "Environment Fingerprint",
+      "type": "string"
+    },
+    "graph_hash": {
+      "title": "Graph Hash",
+      "type": "string"
+    },
+    "runtime_graph_hash": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Runtime Graph Hash"
+    },
+    "evidence_job": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Evidence Job"
+    },
+    "validation_errors": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Validation Errors",
+      "type": "array"
+    }
+  },
+  "required": [
+    "workflow_id",
+    "workflow_name",
+    "model_family",
+    "model_version",
+    "task_type",
+    "supported_styles",
+    "supported_inputs",
+    "required_nodes",
+    "workflow_path",
+    "api_workflow_path",
+    "metadata_path",
+    "environment_fingerprint",
+    "graph_hash"
+  ],
+  "title": "WorkflowRegistryEntry",
+  "type": "object"
+}

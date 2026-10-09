@@ -1,0 +1,6 @@
+execution: serial
+batch_size: 1
+max_attempts: 3
+default_frame_mode: single
+visual_review: human
+automatic_style_requires_confirmation: true

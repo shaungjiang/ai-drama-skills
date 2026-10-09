@@ -1,0 +1,159 @@
+{
+  "$defs": {
+    "CharacterState": {
+      "additionalProperties": false,
+      "properties": {
+        "state_id": {
+          "title": "State Id",
+          "type": "string"
+        },
+        "version": {
+          "default": 1,
+          "minimum": 1,
+          "title": "Version",
+          "type": "integer"
+        },
+        "clothing": {
+          "default": "待设计",
+          "title": "Clothing",
+          "type": "string"
+        },
+        "accessories": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Accessories",
+          "type": "array"
+        },
+        "weapons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Weapons",
+          "type": "array"
+        },
+        "health": {
+          "default": "正常",
+          "title": "Health",
+          "type": "string"
+        },
+        "reference_images": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reference Images",
+          "type": "array"
+        },
+        "approved": {
+          "default": false,
+          "title": "Approved",
+          "type": "boolean"
+        },
+        "approval_note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Approval Note"
+        }
+      },
+      "title": "CharacterState",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "character_id": {
+      "title": "Character Id",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "gender": {
+      "default": "未设定",
+      "title": "Gender",
+      "type": "string"
+    },
+    "age": {
+      "default": "未设定",
+      "title": "Age",
+      "type": "string"
+    },
+    "identity": {
+      "default": "未设定",
+      "title": "Identity",
+      "type": "string"
+    },
+    "appearance": {
+      "default": "待设计",
+      "title": "Appearance",
+      "type": "string"
+    },
+    "face_shape": {
+      "default": "待设计",
+      "title": "Face Shape",
+      "type": "string"
+    },
+    "facial_features": {
+      "default": "待设计",
+      "title": "Facial Features",
+      "type": "string"
+    },
+    "hairstyle": {
+      "default": "待设计",
+      "title": "Hairstyle",
+      "type": "string"
+    },
+    "hair_color": {
+      "default": "待设计",
+      "title": "Hair Color",
+      "type": "string"
+    },
+    "skin_color": {
+      "default": "待设计",
+      "title": "Skin Color",
+      "type": "string"
+    },
+    "physique": {
+      "default": "待设计",
+      "title": "Physique",
+      "type": "string"
+    },
+    "personality": {
+      "default": "未设定",
+      "title": "Personality",
+      "type": "string"
+    },
+    "visual_anchors": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Visual Anchors",
+      "type": "array"
+    },
+    "states": {
+      "items": {
+        "$ref": "#/$defs/CharacterState"
+      },
+      "title": "States",
+      "type": "array"
+    },
+    "active_state": {
+      "default": 1,
+      "title": "Active State",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "name"
+  ],
+  "title": "Character",
+  "type": "object"
+}

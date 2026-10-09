@@ -1,0 +1,457 @@
+{
+  "episode_id": "EP01",
+  "title": "无敌收尸系统 · 第1集",
+  "duration": 60.0,
+  "scenes": [
+    {
+      "scene_id": "SCENE001",
+      "location_id": "LOC001",
+      "time": "深夜",
+      "weather": "窗外无雨，微风",
+      "lighting": "左侧油灯暖主光，西窗冷月光；系统出现时局部古铜微光",
+      "characters": [
+        "CHAR001"
+      ],
+      "objective": "在寿命倒计时前发现求生路径"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "SHOT001",
+      "scene_id": "SCENE001",
+      "characters": [
+        "CHAR001"
+      ],
+      "duration": 6.0,
+      "size": "极近特写",
+      "angle": "略俯视",
+      "composition": "竖屏三分构图，留出人物视线空间；手和关键道具完整入画",
+      "eye_line": "画面右侧",
+      "axis_side": "A",
+      "camera_movement": "固定机位",
+      "action": "林无道睁眼，急促呼吸后努力平稳下来",
+      "expression": "惊惧",
+      "dialogue": "林无道：我只剩十个时辰？",
+      "environment": "油灯火焰轻微跳动，其他结构固定",
+      "first_frame": "林无道闭眼躺在东侧床榻，眉头紧锁",
+      "last_frame": "林无道睁眼，眼神聚焦",
+      "frame_mode": "dual",
+      "transition": "直接切换",
+      "previous_link": "视线引导到手腕",
+      "next_link": "右手运动匹配",
+      "continuity_in": {},
+      "continuity_out": {},
+      "state_versions": {
+        "CHAR001": 1
+      },
+      "prop_ids": [],
+      "source_excerpt": "仅剩十个时辰寿命"
+    },
+    {
+      "shot_id": "SHOT002",
+      "scene_id": "SCENE001",
+      "characters": [
+        "CHAR001"
+      ],
+      "duration": 6.0,
+      "size": "手腕特写",
+      "angle": "俯视",
+      "composition": "竖屏三分构图，留出人物视线空间；手和关键道具完整入画",
+      "eye_line": "画面右侧",
+      "axis_side": "A",
+      "camera_movement": "固定机位",
+      "action": "林无道把右手腕转向油灯，查看诅咒印记",
+      "expression": "怀疑与压抑",
+      "dialogue": "林无道：江轻雪……为何咒我？",
+      "environment": "油灯火焰轻微跳动，其他结构固定",
+      "first_frame": "右手腕自然放在胸前，暗红诅咒纹路隐约显现",
+      "last_frame": "右手腕转向左侧灯光，印记清晰但无文字",
+      "frame_mode": "dual",
+      "transition": "直接切换",
+      "previous_link": "右手运动匹配",
+      "next_link": "音桥引出系统",
+      "continuity_in": {},
+      "continuity_out": {},
+      "state_versions": {
+        "CHAR001": 1
+      },
+      "prop_ids": [],
+      "source_excerpt": "受到未婚妻江轻雪的诅咒"
+    },
+    {
+      "shot_id": "SHOT003",
+      "scene_id": "SCENE001",
+      "characters": [
+        "CHAR001"
+      ],
+      "duration": 6.0,
+      "size": "中近景",
+      "angle": "平视",
+      "composition": "竖屏三分构图，留出人物视线空间；手和关键道具完整入画",
+      "eye_line": "画面右侧",
+      "axis_side": "A",
+      "camera_movement": "固定机位",
+      "action": "林无道坐在床沿，注视空中逐渐汇聚的古铜光点",
+      "expression": "由恐惧转为警觉",
+      "dialogue": "系统：无敌收尸系统已觉醒。",
+      "environment": "油灯火焰轻微跳动，其他结构固定",
+      "first_frame": "林无道已经坐在床沿，双脚落地，右手垂下",
+      "last_frame": "林无道坐姿不变，视线转向前方光点",
+      "frame_mode": "single",
+      "transition": "直接切换",
+      "previous_link": "音桥引出系统",
+      "next_link": "空间交代与视线匹配",
+      "continuity_in": {},
+      "continuity_out": {},
+      "state_versions": {
+        "CHAR001": 1
+      },
+      "prop_ids": [],
+      "source_excerpt": "觉醒无敌收尸系统"
+    },
+    {
+      "shot_id": "SHOT004",
+      "scene_id": "SCENE001",
+      "characters": [
+        "CHAR001"
+      ],
+      "duration": 6.0,
+      "size": "全景",
+      "angle": "平视",
+      "composition": "竖屏三分构图，留出人物视线空间；手和关键道具完整入画",
+      "eye_line": "画面右侧",
+      "axis_side": "A",
+      "camera_movement": "缓慢平移少量距离，展示地面空间",
+      "action": "古铜光点在石桌右侧汇聚，形成闭合铜棺；林无道停在床沿观察",
+      "expression": "戒备",
+      "dialogue": "系统：获得葬天铜棺。",
+      "environment": "油灯火焰轻微跳动，其他结构固定",
+      "first_frame": "石桌右侧地面空置，林无道坐于东侧床沿",
+      "last_frame": "闭合青铜长棺位于石桌右侧地面，林无道位置固定",
+      "frame_mode": "dual",
+      "transition": "直接切换",
+      "previous_link": "空间交代与视线匹配",
+      "next_link": "材质细节接空间全景",
+      "continuity_in": {},
+      "continuity_out": {},
+      "state_versions": {
+        "CHAR001": 1
+      },
+      "prop_ids": [
+        "PROP001"
+      ],
+      "source_excerpt": "获得葬天铜棺"
+    },
+    {
+      "shot_id": "SHOT005",
+      "scene_id": "SCENE001",
+      "characters": [],
+      "duration": 6.0,
+      "size": "铜棺特写",
+      "angle": "低机位",
+      "composition": "竖屏三分构图，留出人物视线空间；手和关键道具完整入画",
+      "eye_line": "画面右侧",
+      "axis_side": "A",
+      "camera_movement": "固定机位",
+      "action": "铜棺暗金纹路短暂亮起，随后稳定",
+      "expression": "庄严、神秘",
+      "dialogue": "系统：收尸可获强化。",
+      "environment": "油灯火焰轻微跳动，其他结构固定",
+      "first_frame": "青铜棺盖闭合，纹路微暗，地面接触影明确",
+      "last_frame": "棺盖保持闭合，古铜纹路柔和发光",
+      "frame_mode": "single",
+      "transition": "直接切换",
+      "previous_link": "材质细节接空间全景",
+      "next_link": "起身与移动在动作描述交代",
+      "continuity_in": {},
+      "continuity_out": {},
+      "state_versions": {},
+      "prop_ids": [
+        "PROP001"
+      ],
+      "source_excerpt": "葬天铜棺"
+    },
+    {
+      "shot_id": "SHOT006",
+      "scene_id": "SCENE001",
+      "characters": [
+        "CHAR001"
+      ],
+      "duration": 6.0,
+      "size": "中景",
+      "angle": "平视",
+      "composition": "竖屏三分构图，留出人物视线空间；手和关键道具完整入画",
+      "eye_line": "画面右侧",
+      "axis_side": "A",
+      "camera_movement": "固定机位",
+      "action": "古卷在石桌中央显现，林无道起身走到桌前后停下",
+      "expression": "专注",
+      "dialogue": "系统：获得藏尸图。",
+      "environment": "油灯火焰轻微跳动，其他结构固定",
+      "first_frame": "林无道站在石桌前，石桌中央汇聚微光，铜棺在右侧后景",
+      "last_frame": "古卷平放桌中央，林无道双手在桌沿外，不遮挡古卷",
+      "frame_mode": "dual",
+      "transition": "直接切换",
+      "previous_link": "起身与移动在动作描述交代",
+      "next_link": "右手、道具动作匹配",
+      "continuity_in": {},
+      "continuity_out": {},
+      "state_versions": {
+        "CHAR001": 1
+      },
+      "prop_ids": [
+        "PROP001",
+        "PROP002"
+      ],
+      "source_excerpt": "获得藏尸图"
+    },
+    {
+      "shot_id": "SHOT007",
+      "scene_id": "SCENE001",
+      "characters": [
+        "CHAR001"
+      ],
+      "duration": 6.0,
+      "size": "手部近景",
+      "angle": "略俯视",
+      "composition": "竖屏三分构图，留出人物视线空间；手和关键道具完整入画",
+      "eye_line": "画面右侧",
+      "axis_side": "A",
+      "camera_movement": "固定机位",
+      "action": "林无道右手靠近古卷，捏住卷轴边扣并轻轻拿起",
+      "expression": "谨慎",
+      "dialogue": "林无道：藏尸图？",
+      "environment": "油灯火焰轻微跳动，其他结构固定",
+      "first_frame": "古卷平放桌面，右手位于卷轴右侧一掌距离",
+      "last_frame": "右手持卷轴边扣，古卷抬离桌面少许；左手仍在桌沿",
+      "frame_mode": "dual",
+      "transition": "直接切换",
+      "previous_link": "右手、道具动作匹配",
+      "next_link": "先放回桌面再展开，保持轴线",
+      "continuity_in": {},
+      "continuity_out": {},
+      "state_versions": {
+        "CHAR001": 1
+      },
+      "prop_ids": [
+        "PROP002"
+      ],
+      "source_excerpt": "藏尸图"
+    },
+    {
+      "shot_id": "SHOT008",
+      "scene_id": "SCENE001",
+      "characters": [
+        "CHAR001"
+      ],
+      "duration": 6.0,
+      "size": "过肩近景",
+      "angle": "俯视",
+      "composition": "竖屏三分构图，留出人物视线空间；手和关键道具完整入画",
+      "eye_line": "画面右侧",
+      "axis_side": "A",
+      "camera_movement": "固定机位",
+      "action": "林无道双手展开古卷，点状光标在图面亮起",
+      "expression": "惊讶后思考",
+      "dialogue": "系统：可查方圆万里内强者尸体位置。",
+      "environment": "油灯火焰轻微跳动，其他结构固定",
+      "first_frame": "古卷已置回桌面，双手分别位于卷轴左右端，卷面半开",
+      "last_frame": "古卷展开，点状光标显现，无文字，左右手各持卷轴一端",
+      "frame_mode": "dual",
+      "transition": "直接切换",
+      "previous_link": "先放回桌面再展开，保持轴线",
+      "next_link": "眼神从地图移向出口",
+      "continuity_in": {},
+      "continuity_out": {},
+      "state_versions": {
+        "CHAR001": 1
+      },
+      "prop_ids": [
+        "PROP002"
+      ],
+      "source_excerpt": "藏尸图记录方圆万里内强者尸体的位置"
+    },
+    {
+      "shot_id": "SHOT009",
+      "scene_id": "SCENE001",
+      "characters": [
+        "CHAR001"
+      ],
+      "duration": 6.0,
+      "size": "面部近景",
+      "angle": "平视",
+      "composition": "竖屏三分构图，留出人物视线空间；手和关键道具完整入画",
+      "eye_line": "画面右侧",
+      "axis_side": "A",
+      "camera_movement": "轻微推近",
+      "action": "林无道从地图上抬起目光，眉头松开",
+      "expression": "决意逐渐形成",
+      "dialogue": "系统：初始强化倍数——十倍。",
+      "environment": "油灯火焰轻微跳动，其他结构固定",
+      "first_frame": "林无道站在桌前低头看图，双肩平稳",
+      "last_frame": "林无道抬头，目光坚定，仍站在桌前",
+      "frame_mode": "dual",
+      "transition": "直接切换",
+      "previous_link": "眼神从地图移向出口",
+      "next_link": "以出口视线形成悬念",
+      "continuity_in": {},
+      "continuity_out": {},
+      "state_versions": {
+        "CHAR001": 1
+      },
+      "prop_ids": [
+        "PROP002"
+      ],
+      "source_excerpt": "初始强化倍数为十倍"
+    },
+    {
+      "shot_id": "SHOT010",
+      "scene_id": "SCENE001",
+      "characters": [
+        "CHAR001"
+      ],
+      "duration": 6.0,
+      "size": "中景",
+      "angle": "平视",
+      "composition": "竖屏三分构图，留出人物视线空间；手和关键道具完整入画",
+      "eye_line": "画面右侧",
+      "axis_side": "A",
+      "camera_movement": "固定机位",
+      "action": "林无道将古卷收拢，右手稳稳握住，目光看向北侧入口",
+      "expression": "冷静、坚定",
+      "dialogue": "林无道：那就从第一具尸体开始。",
+      "environment": "油灯火焰轻微跳动，其他结构固定",
+      "first_frame": "古卷收拢于桌上，林无道右手按在边扣上",
+      "last_frame": "林无道右手持古卷，站位不变，望向北侧入口；铜棺仍在原地",
+      "frame_mode": "dual",
+      "transition": "直接切换",
+      "previous_link": "以出口视线形成悬念",
+      "next_link": "结尾悬念",
+      "continuity_in": {},
+      "continuity_out": {},
+      "state_versions": {
+        "CHAR001": 1
+      },
+      "prop_ids": [
+        "PROP001",
+        "PROP002"
+      ],
+      "source_excerpt": "林无道觉醒系统，获得铜棺和藏尸图，决定求生（原创表演补充）"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "CHAR001",
+      "name": "林无道",
+      "gender": "男",
+      "age": "约25岁",
+      "identity": "穿越修仙世界的青年",
+      "appearance": "青年东亚男性，清瘦而坚毅，黑发束起，墨青古装",
+      "face_shape": "清晰椭圆脸，下颌自然",
+      "facial_features": "平直剑眉，深棕眼睛，直鼻，薄唇",
+      "hairstyle": "黑色长发高束，额前两缕碎发",
+      "hair_color": "黑色",
+      "skin_color": "自然浅米肤色",
+      "physique": "修长，正常头身比例",
+      "personality": "由惊惧转为冷静求生",
+      "visual_anchors": [
+        "墨青交领",
+        "右侧发束",
+        "古铜方扣腰带"
+      ],
+      "states": [
+        {
+          "state_id": "STATE_LIN_01",
+          "version": 1,
+          "clothing": "墨青交领长袍，暗银窄边，古铜方扣黑腰带",
+          "accessories": [],
+          "weapons": [],
+          "health": "受诅咒，仅剩十个时辰",
+          "reference_images": [],
+          "approved": false,
+          "approval_note": null
+        }
+      ],
+      "active_state": 1
+    },
+    {
+      "character_id": "CHAR002",
+      "name": "江轻雪",
+      "gender": "女",
+      "age": "约23岁",
+      "identity": "林无道未婚妻；通过诅咒印记与回忆表现",
+      "appearance": "成年东亚女性，冷静疏离，素白古装",
+      "face_shape": "自然鹅蛋脸",
+      "facial_features": "细长眉，深棕杏眼，挺鼻，唇形克制",
+      "hairstyle": "黑色长发半挽，单枚银簪",
+      "hair_color": "黑色",
+      "skin_color": "自然浅肤色",
+      "physique": "修长自然",
+      "personality": "疏离，动机未由素材交代",
+      "visual_anchors": [
+        "单枚银簪",
+        "素白交领",
+        "冷色眼神"
+      ],
+      "states": [
+        {
+          "state_id": "STATE_JIANG_01",
+          "version": 1,
+          "clothing": "素白交领长裙，银灰窄边",
+          "accessories": [
+            "单枚银簪"
+          ],
+          "weapons": [],
+          "health": "正常",
+          "reference_images": [],
+          "approved": false,
+          "approval_note": null
+        }
+      ],
+      "active_state": 1
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "LOC001",
+      "name": "山中石室",
+      "layout": "南侧石桌，东侧床榻，西侧窄窗；铜棺出现于石桌右侧地面，入口在北侧后景；摄影机始终在桌子南侧",
+      "architecture": "青灰石墙，旧木桌，石板地面，东方修仙洞府",
+      "visual_anchors": [
+        "西侧暖色油灯",
+        "北侧拱形入口",
+        "石桌右侧留空地面"
+      ],
+      "reference_images": [],
+      "approved": false
+    }
+  ],
+  "props": [
+    {
+      "prop_id": "PROP001",
+      "name": "葬天铜棺",
+      "appearance": "旧青铜长棺，暗金浮雕，棺盖闭合，长度与成人躯体相符",
+      "owner_id": "CHAR001",
+      "rule": "不可凭空消失"
+    },
+    {
+      "prop_id": "PROP002",
+      "name": "藏尸图",
+      "appearance": "深褐古卷，古铜边扣，展开后呈现点状光标，无可读文字",
+      "owner_id": "CHAR001",
+      "rule": "记录方圆万里内强者尸体位置；初始强化倍数十倍"
+    }
+  ],
+  "relationships": [
+    {
+      "from": "CHAR001",
+      "to": "CHAR002",
+      "relation": "未婚夫妻",
+      "evidence": "用户提供故事设定：未婚妻江轻雪诅咒林无道"
+    }
+  ],
+  "synopsis": "受诅咒只剩十个时辰的林无道觉醒收尸系统，获得铜棺和藏尸图，决定寻找求生机会。",
+  "hook": "只剩十个时辰",
+  "cliffhanger": "地图中的第一具强者尸体在哪里？",
+  "authoring": "authored_demo"
+}

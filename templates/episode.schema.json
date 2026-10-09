@@ -1,0 +1,537 @@
+{
+  "$defs": {
+    "Character": {
+      "additionalProperties": false,
+      "properties": {
+        "character_id": {
+          "title": "Character Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "gender": {
+          "default": "未设定",
+          "title": "Gender",
+          "type": "string"
+        },
+        "age": {
+          "default": "未设定",
+          "title": "Age",
+          "type": "string"
+        },
+        "identity": {
+          "default": "未设定",
+          "title": "Identity",
+          "type": "string"
+        },
+        "appearance": {
+          "default": "待设计",
+          "title": "Appearance",
+          "type": "string"
+        },
+        "face_shape": {
+          "default": "待设计",
+          "title": "Face Shape",
+          "type": "string"
+        },
+        "facial_features": {
+          "default": "待设计",
+          "title": "Facial Features",
+          "type": "string"
+        },
+        "hairstyle": {
+          "default": "待设计",
+          "title": "Hairstyle",
+          "type": "string"
+        },
+        "hair_color": {
+          "default": "待设计",
+          "title": "Hair Color",
+          "type": "string"
+        },
+        "skin_color": {
+          "default": "待设计",
+          "title": "Skin Color",
+          "type": "string"
+        },
+        "physique": {
+          "default": "待设计",
+          "title": "Physique",
+          "type": "string"
+        },
+        "personality": {
+          "default": "未设定",
+          "title": "Personality",
+          "type": "string"
+        },
+        "visual_anchors": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Visual Anchors",
+          "type": "array"
+        },
+        "states": {
+          "items": {
+            "$ref": "#/$defs/CharacterState"
+          },
+          "title": "States",
+          "type": "array"
+        },
+        "active_state": {
+          "default": 1,
+          "title": "Active State",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "title": "Character",
+      "type": "object"
+    },
+    "CharacterState": {
+      "additionalProperties": false,
+      "properties": {
+        "state_id": {
+          "title": "State Id",
+          "type": "string"
+        },
+        "version": {
+          "default": 1,
+          "minimum": 1,
+          "title": "Version",
+          "type": "integer"
+        },
+        "clothing": {
+          "default": "待设计",
+          "title": "Clothing",
+          "type": "string"
+        },
+        "accessories": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Accessories",
+          "type": "array"
+        },
+        "weapons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Weapons",
+          "type": "array"
+        },
+        "health": {
+          "default": "正常",
+          "title": "Health",
+          "type": "string"
+        },
+        "reference_images": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reference Images",
+          "type": "array"
+        },
+        "approved": {
+          "default": false,
+          "title": "Approved",
+          "type": "boolean"
+        },
+        "approval_note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Approval Note"
+        }
+      },
+      "title": "CharacterState",
+      "type": "object"
+    },
+    "Location": {
+      "additionalProperties": false,
+      "properties": {
+        "location_id": {
+          "title": "Location Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "layout": {
+          "title": "Layout",
+          "type": "string"
+        },
+        "architecture": {
+          "title": "Architecture",
+          "type": "string"
+        },
+        "visual_anchors": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Visual Anchors",
+          "type": "array"
+        },
+        "reference_images": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reference Images",
+          "type": "array"
+        },
+        "approved": {
+          "default": false,
+          "title": "Approved",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "name",
+        "layout",
+        "architecture"
+      ],
+      "title": "Location",
+      "type": "object"
+    },
+    "Prop": {
+      "additionalProperties": false,
+      "properties": {
+        "prop_id": {
+          "title": "Prop Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "appearance": {
+          "title": "Appearance",
+          "type": "string"
+        },
+        "owner_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Owner Id"
+        },
+        "rule": {
+          "default": "不可凭空消失",
+          "title": "Rule",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "appearance"
+      ],
+      "title": "Prop",
+      "type": "object"
+    },
+    "Scene": {
+      "additionalProperties": false,
+      "properties": {
+        "scene_id": {
+          "title": "Scene Id",
+          "type": "string"
+        },
+        "location_id": {
+          "title": "Location Id",
+          "type": "string"
+        },
+        "time": {
+          "default": "夜晚",
+          "title": "Time",
+          "type": "string"
+        },
+        "weather": {
+          "default": "无雨",
+          "title": "Weather",
+          "type": "string"
+        },
+        "lighting": {
+          "default": "左侧暖主光、右侧冷辅光",
+          "title": "Lighting",
+          "type": "string"
+        },
+        "characters": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Characters",
+          "type": "array"
+        },
+        "objective": {
+          "default": "",
+          "title": "Objective",
+          "type": "string"
+        }
+      },
+      "required": [
+        "scene_id",
+        "location_id"
+      ],
+      "title": "Scene",
+      "type": "object"
+    },
+    "Shot": {
+      "additionalProperties": false,
+      "properties": {
+        "shot_id": {
+          "title": "Shot Id",
+          "type": "string"
+        },
+        "scene_id": {
+          "title": "Scene Id",
+          "type": "string"
+        },
+        "characters": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Characters",
+          "type": "array"
+        },
+        "duration": {
+          "exclusiveMinimum": 0,
+          "maximum": 15,
+          "title": "Duration",
+          "type": "number"
+        },
+        "size": {
+          "default": "中景",
+          "title": "Size",
+          "type": "string"
+        },
+        "angle": {
+          "default": "平视",
+          "title": "Angle",
+          "type": "string"
+        },
+        "composition": {
+          "default": "人物位于左侧三分线，右侧保留行动空间",
+          "title": "Composition",
+          "type": "string"
+        },
+        "eye_line": {
+          "default": "画面右侧",
+          "title": "Eye Line",
+          "type": "string"
+        },
+        "axis_side": {
+          "default": "A",
+          "title": "Axis Side",
+          "type": "string"
+        },
+        "camera_movement": {
+          "default": "固定机位",
+          "title": "Camera Movement",
+          "type": "string"
+        },
+        "action": {
+          "title": "Action",
+          "type": "string"
+        },
+        "expression": {
+          "default": "克制",
+          "title": "Expression",
+          "type": "string"
+        },
+        "dialogue": {
+          "default": "",
+          "title": "Dialogue",
+          "type": "string"
+        },
+        "environment": {
+          "default": "稳定",
+          "title": "Environment",
+          "type": "string"
+        },
+        "first_frame": {
+          "title": "First Frame",
+          "type": "string"
+        },
+        "last_frame": {
+          "title": "Last Frame",
+          "type": "string"
+        },
+        "frame_mode": {
+          "default": "single",
+          "enum": [
+            "single",
+            "dual"
+          ],
+          "title": "Frame Mode",
+          "type": "string"
+        },
+        "transition": {
+          "default": "直接切换",
+          "title": "Transition",
+          "type": "string"
+        },
+        "previous_link": {
+          "default": "",
+          "title": "Previous Link",
+          "type": "string"
+        },
+        "next_link": {
+          "default": "",
+          "title": "Next Link",
+          "type": "string"
+        },
+        "continuity_in": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Continuity In",
+          "type": "object"
+        },
+        "continuity_out": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Continuity Out",
+          "type": "object"
+        },
+        "state_versions": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "State Versions",
+          "type": "object"
+        },
+        "prop_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Prop Ids",
+          "type": "array"
+        },
+        "source_excerpt": {
+          "default": "",
+          "title": "Source Excerpt",
+          "type": "string"
+        }
+      },
+      "required": [
+        "shot_id",
+        "scene_id",
+        "duration",
+        "action",
+        "first_frame",
+        "last_frame"
+      ],
+      "title": "Shot",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "episode_id": {
+      "default": "EP01",
+      "title": "Episode Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "duration": {
+      "default": 60,
+      "exclusiveMinimum": 0,
+      "title": "Duration",
+      "type": "number"
+    },
+    "scenes": {
+      "items": {
+        "$ref": "#/$defs/Scene"
+      },
+      "title": "Scenes",
+      "type": "array"
+    },
+    "shots": {
+      "items": {
+        "$ref": "#/$defs/Shot"
+      },
+      "title": "Shots",
+      "type": "array"
+    },
+    "characters": {
+      "items": {
+        "$ref": "#/$defs/Character"
+      },
+      "title": "Characters",
+      "type": "array"
+    },
+    "locations": {
+      "items": {
+        "$ref": "#/$defs/Location"
+      },
+      "title": "Locations",
+      "type": "array"
+    },
+    "props": {
+      "items": {
+        "$ref": "#/$defs/Prop"
+      },
+      "title": "Props",
+      "type": "array"
+    },
+    "relationships": {
+      "items": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "type": "object"
+      },
+      "title": "Relationships",
+      "type": "array"
+    },
+    "synopsis": {
+      "default": "",
+      "title": "Synopsis",
+      "type": "string"
+    },
+    "hook": {
+      "default": "",
+      "title": "Hook",
+      "type": "string"
+    },
+    "cliffhanger": {
+      "default": "",
+      "title": "Cliffhanger",
+      "type": "string"
+    },
+    "authoring": {
+      "default": "extractive_draft",
+      "enum": [
+        "extractive_draft",
+        "codex_reviewed",
+        "authored_demo"
+      ],
+      "title": "Authoring",
+      "type": "string"
+    }
+  },
+  "required": [
+    "title"
+  ],
+  "title": "Episode",
+  "type": "object"
+}

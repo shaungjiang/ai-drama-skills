@@ -1,0 +1,4 @@
+interface:
+  display_name: 首尾帧导演
+  short_description: 设计并生成单首帧或经参考编辑的首尾帧，保持人物与场景身份，支持单独重做尾帧及人工连续性验收。
+  default_prompt: 使用 $first-last-frame 在当前 AI Drama Studio 项目中完成对应制作任务。

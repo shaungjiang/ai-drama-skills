@@ -1,0 +1,6 @@
+default_family: z-image
+fallback_family: qwen-image
+initial_width: 576
+initial_height: 1024
+batch_size: 1
+notes: Recipes must pass object_info validation; filenames alone do not establish editing capability.

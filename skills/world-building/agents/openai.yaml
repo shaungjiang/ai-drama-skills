@@ -1,0 +1,4 @@
+interface:
+  display_name: 世界场景道具导演
+  short_description: 建立修仙、都市或校园世界观、稳定场景和道具数据库，设计可跨镜头复用的空间、光源及状态规则。
+  default_prompt: 使用 $world-building 在当前 AI Drama Studio 项目中完成对应制作任务。

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-drama-skills"
+version = "2.0.0"
+description = "Codex-directed drama planning and verified ComfyUI image production"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.7,<3", "PyYAML>=6,<7", "Pillow>=10,<13"]
+license = "MIT"
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+ai-drama = "ai_drama.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

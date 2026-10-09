@@ -1,0 +1,6 @@
+url: http://127.0.0.1:8188
+timeout: 30
+generation_timeout: 1800
+# Optional: configure explicit local scan directories. No global disk scan.
+workflow_directories: []
+model_directories: []

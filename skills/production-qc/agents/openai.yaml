@@ -1,0 +1,4 @@
+interface:
+  display_name: 生产质量检查
+  short_description: 验证AI漫剧剧本、角色、场景、风格、分镜、实际图片、工作流证据和素材包完整性，生成可追溯质检报告。
+  default_prompt: 使用 $production-qc 在当前 AI Drama Studio 项目中完成对应制作任务。

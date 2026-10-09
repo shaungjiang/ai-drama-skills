@@ -1,0 +1,5 @@
+name: AI Drama Studio
+duration: 60
+aspect_ratio: '9:16'
+default_episode: EP01
+character_approval_required: true

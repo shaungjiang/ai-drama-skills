@@ -1,0 +1,4 @@
+interface:
+  display_name: 图片提示词导演
+  short_description: 根据角色、场景、风格和分镜编写可注入实际ComfyUI模型的中英文静态图片提示词与约束。
+  default_prompt: 使用 $image-prompt 在当前 AI Drama Studio 项目中完成对应制作任务。

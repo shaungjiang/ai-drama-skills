@@ -1,0 +1,206 @@
+{
+  "$defs": {
+    "FrameAsset": {
+      "additionalProperties": false,
+      "properties": {
+        "asset_id": {
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "shot_id": {
+          "title": "Shot Id",
+          "type": "string"
+        },
+        "frame": {
+          "enum": [
+            "first",
+            "last",
+            "character",
+            "location"
+          ],
+          "title": "Frame",
+          "type": "string"
+        },
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "width": {
+          "exclusiveMinimum": 0,
+          "title": "Width",
+          "type": "integer"
+        },
+        "height": {
+          "exclusiveMinimum": 0,
+          "title": "Height",
+          "type": "integer"
+        },
+        "job_id": {
+          "title": "Job Id",
+          "type": "string"
+        },
+        "reference_paths": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reference Paths",
+          "type": "array"
+        },
+        "visual_review": {
+          "default": "PENDING",
+          "enum": [
+            "PENDING",
+            "PASS",
+            "WARNING",
+            "ERROR"
+          ],
+          "title": "Visual Review",
+          "type": "string"
+        },
+        "review_note": {
+          "default": "",
+          "title": "Review Note",
+          "type": "string"
+        },
+        "review_method": {
+          "default": "pending",
+          "enum": [
+            "pending",
+            "human",
+            "visual-model"
+          ],
+          "title": "Review Method",
+          "type": "string"
+        }
+      },
+      "required": [
+        "shot_id",
+        "frame",
+        "path",
+        "sha256",
+        "width",
+        "height",
+        "job_id"
+      ],
+      "title": "FrameAsset",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "job_id": {
+      "title": "Job Id",
+      "type": "string"
+    },
+    "shot_id": {
+      "title": "Shot Id",
+      "type": "string"
+    },
+    "workflow_id": {
+      "title": "Workflow Id",
+      "type": "string"
+    },
+    "model": {
+      "title": "Model",
+      "type": "string"
+    },
+    "seed": {
+      "minimum": 0,
+      "title": "Seed",
+      "type": "integer"
+    },
+    "prompt": {
+      "title": "Prompt",
+      "type": "string"
+    },
+    "parameters": {
+      "additionalProperties": true,
+      "title": "Parameters",
+      "type": "object"
+    },
+    "output_path": {
+      "title": "Output Path",
+      "type": "string"
+    },
+    "status": {
+      "default": "PENDING",
+      "enum": [
+        "PENDING",
+        "SUBMITTED",
+        "RUNNING",
+        "SUCCEEDED",
+        "FAILED",
+        "UNKNOWN"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "error": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Error"
+    },
+    "prompt_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Prompt Id"
+    },
+    "attempts": {
+      "default": 0,
+      "title": "Attempts",
+      "type": "integer"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    },
+    "completed_at": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Completed At"
+    },
+    "assets": {
+      "items": {
+        "$ref": "#/$defs/FrameAsset"
+      },
+      "title": "Assets",
+      "type": "array"
+    }
+  },
+  "required": [
+    "shot_id",
+    "workflow_id",
+    "model",
+    "seed",
+    "prompt",
+    "parameters",
+    "output_path"
+  ],
+  "title": "GenerationJob",
+  "type": "object"
+}

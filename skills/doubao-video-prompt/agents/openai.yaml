@@ -1,0 +1,4 @@
+interface:
+  display_name: 豆包视频提示词
+  short_description: 把分镜和已生成图片导出为H3结构化与自然语言豆包视频提示词、镜头时长和素材核对表；视频由用户手动生成。
+  default_prompt: 使用 $doubao-video-prompt 在当前 AI Drama Studio 项目中完成对应制作任务。

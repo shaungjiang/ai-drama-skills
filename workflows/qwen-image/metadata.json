@@ -1,0 +1,51 @@
+{
+  "family": "qwen-image",
+  "task_type": "text-to-image",
+  "bindings": {
+    "positive": [
+      [
+        "5",
+        "text"
+      ]
+    ],
+    "seed": [
+      [
+        "8",
+        "seed"
+      ]
+    ],
+    "steps": [
+      [
+        "8",
+        "steps"
+      ]
+    ],
+    "width": [
+      [
+        "7",
+        "width"
+      ]
+    ],
+    "height": [
+      [
+        "7",
+        "height"
+      ]
+    ],
+    "output_prefix": [
+      [
+        "10",
+        "filename_prefix"
+      ]
+    ],
+    "negative": [
+      [
+        "6",
+        "text"
+      ]
+    ]
+  },
+  "evidence": "https://docs.comfy.org/tutorials/image/qwen/qwen-image",
+  "validation_status": "EXAMPLE_REQUIRES_LOCAL_VALIDATION",
+  "runtime_verified": false
+}
